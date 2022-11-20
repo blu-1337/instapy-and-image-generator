@@ -7,13 +7,11 @@ from pyunsplash import PyUnsplash
 import requests
 
 
-
-def get_image_from_unsplash():
+def get_image_from_unsplash():  # it downloads an image in the main folder
     dotenv_path = join(dirname(abspath("__file__")), './.env')
     load_dotenv(dotenv_path)
 
     UNSPLASH_ACCESS_KEY = os.environ.get("UNSPLASH_ACCESS_KEY")
-
 
     # instantiate PyUnsplash object
     pu = PyUnsplash(api_key=UNSPLASH_ACCESS_KEY)
@@ -26,9 +24,6 @@ def get_image_from_unsplash():
     open('./unsplash_temp.png', 'wb').write(response.content)
 
 
-
-
-
 def crop_center(pil_img, crop_width, crop_height):  # make image square
     img_width, img_height = pil_img.size
     return pil_img.crop(((img_width - crop_width) // 2,
@@ -37,11 +32,8 @@ def crop_center(pil_img, crop_width, crop_height):  # make image square
                          (img_height + crop_height) // 2))
 
 
-
-
 def create_image_with_message(message, type_of_image):
-
-    def apply_filters(message):
+    def apply_filters_post(message):
         if len(message) < 51:
             return (14, 120, 70, 8)  # return lineWidth, fontSize,  margin and blue_heart_position
         if len(message) < 121:
@@ -57,13 +49,36 @@ def create_image_with_message(message, type_of_image):
         else:
             raise ValueError('Value too big for text, put in a smaller quote')
 
-    (lineWidth, fontSize, margin, blue_heart_divider) = apply_filters(message)
+    def apply_filters_story(message):
+        if len(message) < 51:
+            return (14, 120, 70, 8)  # return lineWidth, fontSize,  margin and blue_heart_position
+        if len(message) < 121:
+            return (16, 94, 70, 10)  # return lineWidth, fontSize,  margin and blue_heart_position
+        if len(message) < 221:
+            return (20, 76, 100, 8)  # return lineWidth, fontSize,  margin and blue_heart_position
+        if len(message) < 261:
+            return (20, 76, 100, 10)  # return lineWidth, fontSize,  margin and blue_heart_position
+        if len(message) < 351:
+            return (22, 72, 100, 10)
+        if len(message) < 501:
+            return (22, 58, 100, 18)
+        else:
+            raise ValueError('Value too big for text, put in a smaller quote')
 
-    width = 1080
-    height = 1080  # this is recommended insta post size
+    if type_of_image == 'post':
+        width = 1080
+        height = 1080  # this is recommended insta post size
+        (lineWidth, fontSize, margin, blue_heart_divider) = apply_filters_post(message)
+    if type_of_image == 'story':
+        width = 1080
+        height = 1920  # this is recommended insta story size 9:16
+        (lineWidth, fontSize, margin, blue_heart_divider) = apply_filters_story(message)
+    else:
+        raise 'This type of image is not recognized and covered. Please use post or story'
+
     font = ImageFont.truetype("./jetbrains.ttf", size=fontSize)
     # img = Image.new('RGB', (width, height), color='blue')
-    # img = Image.open(r'./sample-imgs/portrait_food_4.jpg')
+    # img = Image.open(r'./sample-imgs/bird.jpg')
     img = Image.open(r'./unsplash_temp.png')
 
     img = crop_center(img, width, height)  # make a square
@@ -85,12 +100,12 @@ def create_image_with_message(message, type_of_image):
 
     for line in textwrap.wrap(message, width=lineWidth):
         w = imgDraw.textlength(line, font=font)
-        imgDraw.text(((width - w)/2, offset), line, font=font, fill="#ffffff")
+        imgDraw.text(((width - w) / 2, offset), line, font=font, fill="#ffffff")
         offset += textHeight
 
     blue_heart = Image.open('./blue-heart.png')
-    blue_heart = blue_heart.resize((100,100))
-    img.paste(blue_heart, (int((width-100)/2), int((height-100)/blue_heart_divider)), blue_heart)
+    blue_heart = blue_heart.resize((100, 100))
+    img.paste(blue_heart, (int((width - 100) / 2), int((height - 100) / blue_heart_divider)), blue_heart)
     img.save('result.png')
 
 
@@ -105,7 +120,7 @@ message5 = 'giochero per vincere niggas be niggas all the time no cap we strong 
 message25 = "Lorem ipsum dolor sit ame"
 message50 = "Lorem ipsum dolor sit amet, consectetuer adipiscin"
 message120 = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis nat"  # average quote size
-message220 = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies.'
+message220 = 'Lorem ipsum dolor sit amet, consectetueradipiscing welit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies.'
 message260 = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.'
 message325 = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel'
 message500 = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu'
@@ -117,5 +132,5 @@ print('message has the following number of characters:', len(message325))
 # run program:
 
 get_image_from_unsplash()
-create_image_with_message(message50, 'post')
-# create_image_with_message(message50, 'story')
+# create_image_with_message(message50, 'post')
+create_image_with_message(message500, 'story')
