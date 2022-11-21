@@ -4,6 +4,7 @@ from instagrapi import Client
 # from pathlib import Path
 from instagrapi.types import StoryMention, StoryMedia, StoryLink, StoryHashtag
 import json
+import os
 
 
 def get_random_quote():  # returns quote string
@@ -71,11 +72,23 @@ with open('status.json', 'r') as openfile:
 print(status_object)
 print(type(status_object))
 #                                                login to account
-cl = Client()
+if 'session.json' in os.listdir():
+    with open('session.json', 'r') as f:
+        cl_session = json.load(f)
+else:
+    cl_session =  {}
+
+
+
+
+cl = Client(cl_session)
 username = 'motivation_blu'
 password = read_password_file('./.pass')[0]
 
 cl.login(username, password)
+
+with open('session.json', 'w') as f:
+    json.dump(cl.get_settings(), f)
 
 #                                                 generate story
 get_image_from_unsplash()
