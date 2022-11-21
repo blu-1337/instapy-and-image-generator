@@ -111,4 +111,10 @@ def create_image_with_message(message, type_of_image):
     img.save('result.png')
 
 
+    # convert png to jpg
+    im = Image.open(r"result.png")
+    bg = Image.new("RGB", im.size, (28,28,28))  # up to 255, leave as it is beacuse this equals to the 69 above for transparency
+    bg.paste(im, im)
+    bg.save(r"result.jpg")
+
 
