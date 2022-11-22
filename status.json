@@ -1,5 +1,7 @@
 {
-    "current_id": 26,
+    "current_id": 53,
     "stories_posted": 6,
-    "posts_posted": 1
+    "posts_posted": 1,
+    "todays_date": "2022-11-22",
+    "reset_to_next_day": false
 }

@@ -5,31 +5,114 @@ from instagrapi import Client
 from instagrapi.types import StoryMention, StoryMedia, StoryLink, StoryHashtag
 import json
 import os
+from random import randint
+from time import sleep
 
 
-def get_random_quote():  # returns quote string
-    try:
-        quote_len_under_500 = False
-        while(not quote_len_under_500):
-            ## making the get request
-            response = requests.get("https://quote-garden.herokuapp.com/api/v3/quotes/random")
-            if response.status_code == 200:
-                ## extracting the core data
-                json_data = response.json()
-                data = json_data['data']
 
-                ## getting the quote from the data
-                quote = data[0]['quoteText']
-                author = data[0]['quoteAuthor']
+
+def get_quote_from_quotes_txt():
+    with open('quotes.txt', 'r+', encoding="utf8") as f: # open file in read / write mode
+        firstLine = f.readline() # read the first line and throw it out
+        quote = firstLine.split('-')[0]
+        author = firstLine.split('-')[1]
+
+
+
+        # check if quote already quoted
+        with open('posted_quotes.txt', 'r+') as g:
+            if quote in g.read():
+                print("Quote found in posted_quotes, fetching another one...")
+                print(quote)
+                print('fuckthisloop')
+                data = f.read() # read the rest
+                f.seek(0) # set the cursor to the top of the file
+                f.truncate() # set the file size to the current size
+                f.write(data + "\n") # write the data back
+                return get_quote_from_quotes_txt()
+            else:
+                if len(quote) < 3:
+                    print('Quote is too short, fetching another one...')
+                    data = f.read() # read the rest
+                    f.seek(0) # set the cursor to the top of the file
+                    f.truncate() # set the file size to the current size
+                    f.write(data + "\n") # write the data back
+                    return get_quote_from_quotes_txt()
                 if len(quote) < 501:
                     quote_len_under_500 = True
+                    data = f.read() # read the rest
+                    f.seek(0) # set the cursor to the top of the file
+                    f.truncate() # set the file size to the current size
+                    f.write(data + "\n") # write the data back
+                    g.write(firstLine)
                     return (quote, author)
                 else:
-                    print('Quote is too long, fetching another one')
-            else:
-                print("Error while getting quote")
-    except Exception as e:
-        print("Something went wrong! Try Again! Exception was: ", e)
+                    print('Quote is too long, fetching another one...')
+                    data = f.read() # read the rest
+                    f.seek(0) # set the cursor to the top of the file
+                    f.truncate() # set the file size to the current size
+                    f.write(data + "\n") # write the data back
+                    return get_quote_from_quotes_txt()
+
+# def get_random_quote():
+#     url_array = ['https://quote-garden.herokuapp.com/api/v3/quotes?genre=motivational',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=happiness',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=time',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=inspirational',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=success',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=power',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=science',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=patience',
+#                 'https://quote-garden.herokuapp.com/api/v3/quotes?genre=friendship']
+#
+#     random_url = url_array[randint(0,len(url_array)-1)]
+#     print(random_url)
+#     try:
+#         quote_len_under_500 = False
+#         previous_quote = ''
+#         while(not quote_len_under_500):
+#             ## making the get request
+#             response = requests.get(random_url)
+#             print('____requested!')
+#             if response.status_code == 200:
+#                 ## extracting the core data
+#                 json_data = response.json()
+#                 data = json_data['data']
+#
+#                 ## getting the quote from the data
+#                 quote = data[0]['quoteText']
+#                 author = data[0]['quoteAuthor']
+#
+#                 print(quote)
+#                 # check if quote already quoted
+#                 with open('posted_quotes.txt', 'r+') as f:
+#                     if quote in f.read():
+#                         print("Quote found in posted_quotes, fetching another one...")
+#                         print(previous_quote, "AAAAAAAAAAAAND", quote)
+#                         if(previous_quote == quote):
+#                             return get_quote_from_quotes_txt()  # this means the quote was the same so get it from quotes.txt...
+#                         previous_quote = quote
+#                     else:
+#                         if len(quote) < 3:
+#                             print('Quote is too short, fetching another one...')
+#                             if(previous_quote == quote):
+#                                 return get_quote_from_quotes_txt()  # this means the quote was the same so get it from quotes.txt..
+#                             previous_quote = quote
+#                             continue
+#                         if len(quote) < 501:
+#                             quote_len_under_500 = True
+#                             f.write(quote + "\n")
+#                             return (quote, author)
+#                         else:
+#                             print('Quote is too long, fetching another one')
+#
+#                     return get_quote_from_quotes_txt()
+#             else:
+#                 print("Error while getting quote, getting one from quotes.txt")
+#                 get_quote_from_quotes_txt()
+#
+#     except Exception as e:
+#         print("Something went wrong! Try Again! Exception was: ", e)
 
 
 def read_password_file(filepath):
@@ -45,7 +128,7 @@ def read_password_file(filepath):
         raise ValueError("Can't open password file for reading.")
 
 
-(message, author) = get_random_quote()
+(message, author) = get_quote_from_quotes_txt()
 
 # message2 = "When you say you suffer from a physical illness, you get sympathy. When you say you suffer from depression, you sometimes get blamed. We know it sucks, but at the very least, please take solace in the fact that you are not alone – as evidenced by the fact that 350 million people in the world struggle with depression."
 #
@@ -82,7 +165,7 @@ else:
 
 
 cl = Client(cl_session)
-username = 'motivation_blu'
+username = 'moneyfest001@outlook.com'
 password = read_password_file('./.pass')[0]
 
 cl.login(username, password)
