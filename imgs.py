@@ -16,9 +16,16 @@ def get_image_from_unsplash():  # it downloads an image in the main folder
     # instantiate PyUnsplash object
     pu = PyUnsplash(api_key=UNSPLASH_ACCESS_KEY)
 
-    photos = pu.photos(type_='random', count=1, featured=True, query="splash")
-    [photo] = photos.entries
-    print(photo.id, photo.link_download)
+    while (True):
+        photos = pu.photos(type_='random', count=1, featured=True, query='')
+        [photo] = photos.entries
+        print(photo.id, photo.link_download)
+        with open('used_photos_ids.txt', 'r+') as f:
+            if photo.id in f.read():
+                continue
+            else:
+                f.write(photo.id + "\n")
+                break
 
     response = requests.get(photo.link_download, allow_redirects=True)
     open('./unsplash_temp.png', 'wb').write(response.content)
@@ -110,11 +117,9 @@ def create_image_with_message(message, type_of_image):
     img.paste(blue_heart, (int((width - 100) / 2), int((height - 100) / blue_heart_divider)), blue_heart)
     img.save('result.png')
 
-
     # convert png to jpg
     im = Image.open(r"result.png")
-    bg = Image.new("RGB", im.size, (28,28,28))  # up to 255, leave as it is beacuse this equals to the 69 above for transparency
+    bg = Image.new("RGB", im.size,
+                   (28, 28, 28))  # up to 255, leave as it is beacuse this equals to the 69 above for transparency
     bg.paste(im, im)
     bg.save(r"result.jpg")
-
-

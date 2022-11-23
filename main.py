@@ -7,7 +7,7 @@ import json
 import os
 from random import randint
 from time import sleep
-
+import sys
 
 
 
@@ -51,7 +51,8 @@ def get_quote_from_quotes_txt_for_instapost():
                     f.write(data + "\n") # write the data back
                     return get_quote_from_quotes_txt_for_instapost()
 
-
+def get_quote_from_quotes_txt_for_instastory():
+    pass  # put code for story quote fetching, do not delete from quotes, just pick a random one
 
 
 def read_password_file(filepath):
@@ -67,19 +68,18 @@ def read_password_file(filepath):
         raise ValueError("Can't open password file for reading.")
 
 
-(message, author) = get_quote_from_quotes_txt_for_instapost()
 
 
-# up to 260 incl. fontsize: 72, width 20
-# up to 120 incl. fontsize: 72, width 16
 
-#                                                  run program:
 with open('status.json', 'r') as openfile:
     # Reading from json file
     status_object = json.load(openfile)
 
 print(status_object)
 print(type(status_object))
+#
+#
+
 #                                                login to account
 if 'session.json' in os.listdir():
     with open('session.json', 'r') as f:
@@ -97,15 +97,34 @@ cl.login(username, password)
 with open('session.json', 'w') as f:
     json.dump(cl.get_settings(), f)
 
-#                                                 generate story
-get_image_from_unsplash()
-create_image_with_message(message, 'story')
+#                                               check args for story or post
 
-#                                                   post story
-path = ".\\result.jpg"
-cl.photo_upload_to_story(path)
+print(sys.argv[1],sys.argv[1] == 'post')
+print(sys.argv)
+if (sys.argv[1] == 'post'): # the first argument is post
+    #                                             generate and post photo
+    (message, author) = get_quote_from_quotes_txt_for_instapost()
+    get_image_from_unsplash()
+    create_image_with_message(message, 'post')
+    #                                                 post photo
+    path = ".\\result.jpg"
+    cl.photo_upload(path, caption=(message + ' -' + author + '\n\n\n #motivational #quoteoftheday #motivationalquotes #motivation #quotes #inspiration #success #mindset #inspirationalquotes #love #positivity'))
+
+    #                                             also creates a story for it
+    create_image_with_message(message, 'story')
+    cl.photo_upload_to_story(path)
+elif (sys.argv[1] == 'story'):  # this only makes the story
+    #                                                generate story
+    (message, author) = get_quote_from_quotes_txt_for_instastory()
+    get_image_from_unsplash()
+    create_image_with_message(message, 'story')
+    #                                                  post story
+    path = ".\\result.jpg"
+    cl.photo_upload_to_story(path)
 
 
-#                                             generate and post photo
-create_image_with_message(message, 'post')
-cl.photo_upload(path, caption=(message + ' -' + author + '\n\n\n #motivational #quoteoftheday #motivationalquotes #motivation #quotes #inspiration #success #mindset #inspirationalquotes #love #positivity'))
+
+# up to 260 incl. fontsize: 72, width 20
+# up to 120 incl. fontsize: 72, width 16
+
+#                                                     run program:
