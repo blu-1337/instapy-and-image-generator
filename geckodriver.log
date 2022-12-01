@@ -248,3 +248,194 @@ NetworkError@resource://services-settings/RemoteSettingsClient.jsm:120:5
 _adjustedError@resource://services-settings/RemoteSettingsClient.jsm:869:14
 maybeSync@resource://services-settings/RemoteSettingsClient.jsm:774:38
 
+1669668497488	geckodriver	INFO	Listening on 127.0.0.1:11533
+1669668693695	geckodriver	INFO	Listening on 127.0.0.1:11597
+1669668696779	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "11598" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofile9MDEH1"
+1669668697161	Marionette	INFO	Marionette enabled
+1669668697168	Marionette	INFO	Listening on port 11607
+Read port: 11607
+WebDriver BiDi listening on ws://127.0.0.1:11598
+1669668697364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofile9MDEH1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:11598/devtools/browser/07151f86-ab5d-41db-b14e-7348b0f45a76
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1669668818515	Marionette	INFO	Stopped listening on port 11607
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 28784, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669668825136	geckodriver	INFO	Listening on 127.0.0.1:11685
+1669668828163	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "11686" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofile2jFUUd"
+1669668828461	Marionette	INFO	Marionette enabled
+1669668828466	Marionette	INFO	Listening on port 11696
+Read port: 11696
+WebDriver BiDi listening on ws://127.0.0.1:11686
+1669668828634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofile2jFUUd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:11686/devtools/browser/5768df74-4d6a-4757-90ce-62ddf096e158
+1669669119965	Marionette	INFO	Stopped listening on port 11696
+console.warn: TopSitesFeed: Failed to fetch data from Con1669669120883	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "11863" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofileG2q2ha"
+1669669121183	Marionette	INFO	Marionette enabled
+1669669121187	Marionette	INFO	Listening on port 11873
+Read port: 11873
+WebDriver BiDi listening on ws://127.0.0.1:11863
+1669669121355	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofileG2q2ha\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:11863/devtools/browser/64cc79fa-a8fd-477b-a397-38952e67c257
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1669669156990	Marionette	INFO	Stopped listening on port 11873
+console.warn: TopSitesFeed: Failed to fetch data from Con1669669158277	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "11933" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofileI8bQAw"
+1669669158569	Marionette	INFO	Marionette enabled
+1669669158573	Marionette	INFO	Listening on port 11943
+Read port: 11943
+WebDriver BiDi listening on ws://127.0.0.1:11933
+1669669158826	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofileI8bQAw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:11933/devtools/browser/312f9eec-4d1a-4fd3-8d8a-d99edd494c8c
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yz/l/en_US/YcuMIbJbBxn.js?_nc_x=Ij3Wp8lg5Kz, line 25: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yz/l/en_US/YcuMIbJbBxn.js?_nc_x=Ij3Wp8lg5Kz, line 25: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yz/l/en_US/YcuMIbJbBxn.js?_nc_x=Ij3Wp8lg5Kz, line 25: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1669669277063	Marionette	INFO	Stopped listening on port 11943
+[Parent 31128, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669669281355	geckodriver	INFO	Listening on 127.0.0.1:12051
+1669669284418	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "12052" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofilev6Nk1i"
+1669669284716	Marionette	INFO	Marionette enabled
+1669669284720	Marionette	INFO	Listening on port 12061
+Read port: 12061
+WebDriver BiDi listening on ws://127.0.0.1:12052
+1669669284885	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofilev6Nk1i\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:12052/devtools/browser/3048c846-3fcc-435c-b8a9-2ef86d7e4e0c
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1669669296664	Marionette	INFO	Stopped listening on port 12061
+[Parent 28508, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 28508, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669669377656	geckodriver	INFO	Listening on 127.0.0.1:12110
+1669669380722	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "12111" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofilegjqp2O"
+1669669381010	Marionette	INFO	Marionette enabled
+1669669381015	Marionette	INFO	Listening on port 12121
+Read port: 12121
+WebDriver BiDi listening on ws://127.0.0.1:12111
+1669669381193	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1669669695247	geckodriver	INFO	Listening on 127.0.0.1:12203
+1669669698302	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "12204" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofilen74BoD"
+1669669698593	Marionette	INFO	Marionette enabled
+1669669698597	Marionette	INFO	Listening on port 12214
+Read port: 12214
+WebDriver BiDi listening on ws://127.0.0.1:12204
+1669669698782	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofilen74BoD\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:12204/devtools/browser/99cbe900-4979-4786-8835-a91702763dc0
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1669670211478	Marionette	INFO	Stopped listening on port 12214
+[Parent 13724, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 13724, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669716289077	geckodriver	INFO	Listening on 127.0.0.1:12779
+1669716292120	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\firefox.exe" "--marionette" "--remote-debugging-port" "12780" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofileNPfzZC"
+1669716292482	Marionette	INFO	Marionette enabled
+1669716292487	Marionette	INFO	Listening on port 12791
+Read port: 12791
+WebDriver BiDi listening on ws://127.0.0.1:12780
+1669716292619	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofileNPfzZC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:12780/devtools/browser/0fd796b5-6598-496b-b1b4-71ec54e730bd
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yW/l/en_US/gH5pnulrKxd.js?_nc_x=Ij3Wp8lg5Kz, line 23: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yW/l/en_US/gH5pnulrKxd.js?_nc_x=Ij3Wp8lg5Kz, line 23: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yW/l/en_US/gH5pnulrKxd.js?_nc_x=Ij3Wp8lg5Kz, line 23: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iBvN4/yb/l/en_US/A3Cpx9R0Hih.js?_nc_x=Ij3Wp8lg5Kz, line 1335: Script terminated by timeout at:
+b.getVisibleRect@https://static.cdninstagram.com/rsrc.php/v3iBvN4/yb/l/en_US/A3Cpx9R0Hih.js?_nc_x=Ij3Wp8lg5Kz:1335:4844
+b.measureAll@https://static.cdninstagram.com/rsrc.php/v3iBvN4/yb/l/en_US/A3Cpx9R0Hih.js?_nc_x=Ij3Wp8lg5Kz:1335:4106
+b.startTimer/this.$6<@https://static.cdninstagram.com/rsrc.php/v3iBvN4/yb/l/en_US/A3Cpx9R0Hih.js?_nc_x=Ij3Wp8lg5Kz:1335:5922
+b@https://static.cdninstagram.com/rsrc.php/v3/y0/r/v9C7j44o3lp.js?_nc_x=Ij3Wp8lg5Kz:257:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y0/r/v9C7j44o3lp.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y0/r/v9C7j44o3lp.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/yW/l/en_US/gH5pnulrKxd.js?_nc_x=Ij3Wp8lg5Kz, line 23: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://devtools/server/actors/resources/network-events-content.js, line 70: NS_NOINTERFACE: Component returned failure code: 0x80004002 (NS_NOINTERFACE) [nsISupports.QueryInterface]
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: "Unable to find target with innerWindowId:4294967303"
+console.error: "Unable to find target with innerWindowId:4294967303"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i_oV4/yw/l/en_US/hrIB8m_bfF4.js?_nc_x=Ij3Wp8lg5Kz, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:97:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:186:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:729:32
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:775:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:656:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 97, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 97))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _sendRequestBody@resource://devtools/server/actors/network-monitor/network-observer.js:1440:7
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:574:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:686:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1440, column: 7
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1440))
+Handler function threw an exception: TypeError: httpActivity.owner is null
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:1037:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:577:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:686:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1037, column: 5
+console.error: (new TypeError("httpActivity.owner is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 1037))
+Handler function _httpStopRequest threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/server/actors/network-monitor/utils/network-utils.js:97:1
+exports.createNetworkEvent@resource://devtools/server/actors/network-monitor/utils/network-utils.js:186:33
+_createNetworkEvent@resource://devtools/server/actors/network-monitor/network-observer.js:729:32
+_httpStopRequest@resource://devtools/server/actors/network-monitor/network-observer.js:356:14
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 97, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/server/actors/network-monitor/utils/network-utils.js", 97))
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i_oV4/yw/l/en_US/hrIB8m_bfF4.js?_nc_x=Ij3Wp8lg5Kz, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1669822523847	Marionette	INFO	Stopped listening on port 12791
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 31036, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

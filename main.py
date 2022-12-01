@@ -123,8 +123,4 @@ elif (sys.argv[1] == 'story'):  # this only makes the story
     cl.photo_upload_to_story(path)
 
 
-
-# up to 260 incl. fontsize: 72, width 20
-# up to 120 incl. fontsize: 72, width 16
-
-#                                                     run program:
+print("___END OF INSTAGRAM POSTING BOT MAIN FILE")
