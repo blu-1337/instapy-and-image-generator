@@ -1,7 +1,24 @@
 {
-    "current_id": 53,
-    "stories_posted": 6,
-    "posts_posted": 1,
-    "todays_date": "2022-11-22",
-    "reset_to_next_day": false
+    "status": {
+        "current_id": 63,
+        "stories_posted": 6,
+        "posts_posted": 1,
+        "todays_date": "2022-12-08",
+        "reset_to_next_day": false
+    },
+    "following": [
+        {
+            "id": 0,
+            "username": "mindsethub_",
+            "started_following": "2022-12-08",
+            "unfollow": false
+        },
+        {
+            "id": 1,
+            "username": "ricosamastano",
+            "started_following": "2022-12-08",
+            "unfollow": false
+        }
+    ],
+    "current_global_id_for_followers": 2
 }

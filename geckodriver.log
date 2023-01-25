@@ -439,3 +439,255 @@ JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
 1669822523847	Marionette	INFO	Stopped listening on port 12791
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
 [Parent 31036, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670517047941	geckodriver	INFO	Listening on 127.0.0.1:5700
+1670517051135	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\firefox.exe" "--marionette" "--remote-debugging-port" "5701" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofilemkK7Ob"
+1670517052064	Marionette	INFO	Marionette enabled
+1670517052069	Marionette	INFO	Listening on port 5714
+Read port: 5714
+WebDriver BiDi listening on ws://127.0.0.1:5701
+1670517052339	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofilemkK7Ob\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5701/devtools/browser/02b65d20-29ea-4a7a-a54b-2e0703b9a693
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1670517165642	geckodriver	INFO	Listening on 127.0.0.1:5876
+1670517168710	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\firefox.exe" "--marionette" "--remote-debugging-port" "5877" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofile8JSo22"
+1670517169114	Marionette	INFO	Marionette enabled
+1670517169119	Marionette	INFO	Listening on port 5888
+Read port: 5888
+WebDriver BiDi listening on ws://127.0.0.1:5877
+1670517169296	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\blu\\AppData\\Local\\Temp\\rust_mozprofile8JSo22\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5877/devtools/browser/caf25e7e-7ab1-4765-9d45-bbc962bc2aa9
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: (new TypeError("node is null", "resource://devtools/server/actors/page-style.js", 1007))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.windowGlobal4294967304/pagestyle23 (resource://devtools/server/actors/page-style.js:1007:5)", "resource://devtools/shared/protocol/Front.js", 383))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("nodeFront.walkerFront is null", "resource://devtools/client/inspector/markup/markup.js", 966))
+TypeError: nodeFront.walkerFront is null: _onNewSelection@resource://devtools/client/inspector/markup/markup.js:966:7
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+setNodeFront@resource://devtools/client/framework/selection.js:203:10
+onDetached@resource://devtools/client/inspector/inspector.js:1685:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+_onMutations@resource://devtools/client/framework/selection.js:104:12
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new Error("Can not send request 'getUniqueSelector' because front 'domnode' is already destroyed.", "resource://devtools/shared/protocol/Front/FrontClassWithSpec.js", 28))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("nodeFront.walkerFront is null", "resource://devtools/client/inspector/markup/markup.js", 966))
+TypeError: nodeFront.walkerFront is null: _onNewSelection@resource://devtools/client/inspector/markup/markup.js:966:7
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+setNodeFront@resource://devtools/client/framework/selection.js:203:10
+onDetached@resource://devtools/client/inspector/inspector.js:1685:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+_onMutations@resource://devtools/client/framework/selection.js:104:12
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new Error("Can not send request 'getUniqueSelector' because front 'domnode' is already destroyed.", "resource://devtools/shared/protocol/Front/FrontClassWithSpec.js", 28))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+console.error: "Unable to find target with innerWindowId:4294967304"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz, line 46: Script terminated by timeout at:
+F@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:46:1486
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:335
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+FrameRequestCallback*a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:258:284
+a@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:330
+loop@https://static.cdninstagram.com/rsrc.php/v3i3QE4/y2/l/en_US/gIGB8w1DwlYde5gfZDMjD5Bpuf2bT9qOw3DChNODIDBdgrC1N8SS88BUq5GDdZeb2zHixQOwquHisgzFqFgk_2GCuoHUKR4qabiuG-XDjzgwhI0seY-D6MZy0JHcarberL-w0nCGaWmVM9TppCo9l5GUkCR-avCFOps42nbJpxDZsHtc.js?_nc_x=Ij3Wp8lg5Kz:1223:14
+b@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:259:213
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10128
+c@https://static.cdninstagram.com/rsrc.php/v3/y9/r/yYXX6EVkqGv.js?_nc_x=Ij3Wp8lg5Kz:58:10862
+
+console.error: "Unable to find target with innerWindowId:4294967305"
+console.error: "Unable to find target with innerWindowId:4294967305"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2353))
+console.error: "Unable to find target with innerWindowId:4294967306"
+console.error: "Unable to find target with innerWindowId:4294967306"
+console.error: "Unable to find target with innerWindowId:4294967306"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "Unable to find target with innerWindowId:4294967307"
+console.error: "Unable to find target with innerWindowId:4294967307"
+console.error: "Unable to find target with innerWindowId:4294967307"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "Unable to find target with innerWindowId:4294967308"
+console.error: "Unable to find target with innerWindowId:4294967308"
+console.error: "Unable to find target with innerWindowId:4294967308"
+console.error: "Unable to find target with innerWindowId:4294967308"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "Unable to find target with innerWindowId:4294967309"
+console.error: "Unable to find target with innerWindowId:4294967309"
+console.error: "Unable to find target with innerWindowId:4294967309"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/y9/l/en_US/fDSwnSLor0b.js?_nc_x=Ij3Wp8lg5Kz, line 27: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1670858029302	Marionette	INFO	Stopped listening on port 5888
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 20888, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
