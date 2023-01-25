@@ -55,5 +55,13 @@ The main Python file.
 This is the Jupyter notebook to be opened for application testing and development.
 
 ## posted_quotes.txt
+In this file are stored quotes that have already been posted on the instagram page.
+
 ## quotes.txt
+This is the main quotes file. This is a large collection of quotes with the following format
+`quote -Author`
+The minus sign is mandatory as it is searched for in the application.
+
+This file gets smaller with time as the quotes get moved line by line to the `posted_quotes.txt` file.
 ## quotes Copy.txt
+This is just a copy of the original quotes file
