@@ -15,7 +15,11 @@ def get_quote_from_quotes_txt_for_instapost():
     with open('quotes.txt', 'r+', encoding="utf8") as f: # open file in read / write mode
         firstLine = f.readline() # read the first line and throw it out
         quote = firstLine.split('-')[0]
-        author = firstLine.split('-')[1]
+        try:
+            author = firstLine.split('-')[1]
+        except:
+            print("Author not found! Assigning string 'Unknown' as the author of this quote...")
+            author = "Unknown"
         # check if quote already quoted
         with open('posted_quotes.txt', 'r+') as g:
             if quote in g.read():
