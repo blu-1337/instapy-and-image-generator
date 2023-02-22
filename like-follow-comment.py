@@ -325,6 +325,8 @@ to_follow = randint(8,11)
 to_comment = randint(8, 11)
 to_like = randint(30, 36)
 
+# to_follow, to_comment, to_like = 1, 1, 1
+
 follow_counter, like_counter, comment_counter, posts_counter = 0, 0, 0, 0
 
 while True:
@@ -375,3 +377,5 @@ while True:
         
 
 
+print("Closing web driver...")
+driver.close()
