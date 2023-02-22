@@ -70,4 +70,4 @@ This is just a copy of the original quotes file
 This section is to help you go through a password change and things similar to this which require that you edit program files.
 
 ## Instagram Password Change
-If you change your account password, you need to update the .pass file and delete the session.json file as this keeps in memory your old session with your old password and the login will fail.
+If you change your account password, you need to update the `.pass` file and delete the `session.json` file as this keeps in memory your old session with your old password and the login will fail.
