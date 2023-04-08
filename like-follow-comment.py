@@ -198,14 +198,11 @@ presets = [
     }
 ]
 
-profile = webdriver.FirefoxProfile()
-profile.set_preference('devtools.responsiveUI.presets', json.dumps(presets))
+
+
 
 # driver = webdriver.Firefox(profile)
 
-options = Options()
-options.binary_location = r'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
-driver = webdriver.Firefox(profile, options=options)
 
 # driver.get('http://google.com/')
 
@@ -215,6 +212,57 @@ driver = webdriver.Firefox(profile, options=options)
 
 
 
+
+
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver import Firefox
+import random, psutil, shutil, os, time
+
+
+# can be a new folder
+profile_path = r"C:\Users\blu\AppData\Roaming\Mozilla\Firefox\Profiles\stschfau.default-release"
+
+# if not os.path.isdir(profile_path):
+# 	os.mkdir(profile_path)
+
+
+firefox_profile = webdriver.FirefoxProfile(profile_path)
+options = Options()
+
+options.profile = firefox_profile
+firefox_profile.set_preference('devtools.responsiveUI.presets', json.dumps(presets))
+
+
+options.profile.set_preference('signon.autologin.proxy', True)
+options.profile.set_preference('signon.autologin.username', 'motivation_blu')
+options.profile.set_preference('signon.autologin.password', 'Www.mafia.com8')
+options.profile.set_preference('browser.sessionstore.interval', 10)
+options.profile.set_preference('browser.sessionstore.resume_from_crash', True)
+options.profile.set_preference('browser.sessionstore.max_tabs_undo', 5)
+options.profile.set_preference('browser.sessionstore.max_windows_undo', 5)
+options.profile.set_preference('browser.sessionstore.privacy_level', 2)
+
+# # Launch Firefox with the profile that has your login credentials
+# driver = webdriver.Firefox(firefox_profile=profile)
+
+options.binary_location = r'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
+
+# add a random thing so we can distinguish the firefox process
+# distinguishkey = "-persistentprofileworkaround"+str(random.randint(111111,999999))
+
+# options.add_argument(distinguishkey)
+
+
+# print("gistinguish_key is: ", distinguishkey)
+
+driver = webdriver.Firefox(firefox_profile, options=options, executable_path="geckodriver")
+
+
+
+
+
+# do web stuff here
 
 
 # driver.minimize_window()
@@ -229,6 +277,8 @@ try:
     login()
 except Exception as e:
     print('We had the following problem: ', e)
+
+
     
 check_for_popups()
 
@@ -246,7 +296,7 @@ check_for_popups()
 
 # leave a comment function
 
-    
+
 
 
 hashtag_list = [
@@ -320,12 +370,18 @@ hashtag_list.pop(0)
 posts = fetch_posts(5)
 
 
+#best settings
+# to_follow = randint(8,11)
+# to_comment = randint(8, 11)
+# to_like = randint(30, 36)
 
-to_follow = randint(8,11)
-to_comment = randint(8, 11)
-to_like = randint(30, 36)
+to_follow = randint(1,5)
+to_comment = randint(1, 5)
+to_like = randint(1, 10)
 
-# to_follow, to_comment, to_like = 1, 1, 1
+
+
+# to_follow, to_comment, to_like = 0, 0, 0
 
 follow_counter, like_counter, comment_counter, posts_counter = 0, 0, 0, 0
 
@@ -379,3 +435,45 @@ while True:
 
 print("Closing web driver...")
 driver.close()
+
+
+
+
+
+
+
+
+#driver.get("http://localhost/cookie.php")
+#time.sleep(1)
+#driver.get("http://localhost/cookie.php")
+#time.sleep(1)
+#driver.get("http://localhost/cookie.php")
+
+
+
+# for pid in psutil.pids():
+#     try:
+#         cmdline = open("/proc/"+str(pid)+"/cmdline", "r").read()
+#         print("_____________________")
+#         print(cmdline)
+#         if distinguishkey in cmdline:
+#             profile = cmdline.split('-profile')[1].split(' ')[0].replace('\x00', '')
+#             break
+#     except:
+#         pass
+
+# psutil.Process(pid).kill() # kill firefox (nicely) and unlock profile lock
+# if os.path.isdir(profile_path):
+# 	shutil.rmtree(profile_path)
+# shutil.copytree(profile, profile_path, symlinks=True) # copy the new profile to profile_path, don't resolve "lock" symlink
+
+try:
+  driver.quit() # will throw an error because we killed firefox
+except:
+  pass
+
+# # cleanup
+# if os.path.isdir(profile):
+# 	shutil.rmtree(profile)
+# if os.path.isdir(driver.profile.tempfolder):
+# 	shutil.rmtree(driver.profile.tempfolder)
