@@ -43,32 +43,39 @@ def read_password_file(filepath):
         raise ValueError("Can't open password file for reading.")
 
 def check_for_popups():
+    print("Checking for popups...")
     try:
         login_button = driver.find_element(By.XPATH, '//button[text()="Log in"]')
         login_button.click()
         sleep(1)
         return print('found login button')
-    except: print("No 'do not dw app click on login found'")
+    except: pass
     try:
         # add instagram to your home screen, cancel
         button = driver.find_element(By.XPATH, '//button[text()="Cancel"]')
         button.click()
         sleep(1)
         return print('found cancel button')
-    except: print("No 'add instagram to your home screen, cancel' button found'")
+    except: pass
     try:
         # do not save login info, click on not now
         button = driver.find_element(By.XPATH, '//button[text()="Not Now"]')
         button.click()
         sleep(1)
         return print('found not now button')
-    except: print("No 'do not save login info, click on not now' button found'")
+    except: pass
     try:
         button = driver.find_element(By.XPATH, '//button[text()="Allow essential and optional cookies"]')
         button.click()
         sleep(1)
         return print('found allow essential and optional cookies button')
-    except: print("No essential cookies popup button found.")
+    except: pass
+    try:
+        button = driver.find_element(By.XPATH, '//button[text()="Continue as motivation_blu"]')
+        button.click()
+        sleep(1)
+        return print('found allow essential and optional cookies button')
+    except: pass
     print("Popup check finished, no recognizable popup currently on the screen.")
 
 def login():
@@ -235,8 +242,6 @@ firefox_profile.set_preference('devtools.responsiveUI.presets', json.dumps(prese
 
 
 options.profile.set_preference('signon.autologin.proxy', True)
-options.profile.set_preference('signon.autologin.username', 'motivation_blu')
-options.profile.set_preference('signon.autologin.password', 'Www.mafia.com8')
 options.profile.set_preference('browser.sessionstore.interval', 10)
 options.profile.set_preference('browser.sessionstore.resume_from_crash', True)
 options.profile.set_preference('browser.sessionstore.max_tabs_undo', 5)
